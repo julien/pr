@@ -31,3 +31,16 @@ Usage of pullreq:
         pull request title
 ```
 
+# Examples
+
+```shell
+# Open a PR from the current branch to "origin:master"
+pullreq -t "My feature" -d "Add easter-egg into website"
+```
+
+```shell
+# Open a PR from the "origin:my_feature" to "some_remote:dev"
+pullreq -t "My feature" -d "Add easter-egg into website" -f my_feature -i dev -into-remote some_remote
+```
+
+etc...
